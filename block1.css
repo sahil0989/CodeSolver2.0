@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 10em 10em;
+    background-color: black;
+    opacity: 0.9;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #5468ff;
+}
+
+header {
+    padding: 30px 0 0px 0;
+}
+
+.gradient {
+    background: #5adaff;
+    background: radial-gradient(circle farthest-corner at center center, #5adaff 0%, #5468ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box {
+    font-size: 3vw;
+    margin: max(1rem, 3vw);
+    border: 0.35rem solid;
+    padding: 3vw;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.heading {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.box1 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.box1 select {
+    border-radius: 60px;
+    background-color: #5468ff;
+    color: white;
+    padding: 2px 18px;
+    border: none;
+    font-size: 20px;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.glass {
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    color: #fff;
+    border-radius: 9px;
+    backdrop-filter: blur(50px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    line-height: 1.5;
+
+}
+
+.glass h1 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.input input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding-left: 30px;
+    padding-top: 0;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.glass p {
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+#chatLog {
+    font-size: 1.1rem;
+    padding-top: 50px;
+    overflow: scroll;
+}
+
+.dropbtn {
+    background-color: #5468ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    right: 0;
+    margin-top: 2px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #5468ff;
+    border-radius: 10px;
+    color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #4351b5;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+
+    body {
+        padding: 1rem 2rem;
+    }
+
+    .logo {
+        font-size: large;
+    }
+
+    h1 {
+        font-size: small;
+    }
+
+    .glass {
+        margin-top: 12rem;
+        width: 100%;
+    }
+
+    .box1 {
+        top: 34%;
+    }
+
+    .box1 select {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .heading {
+        font-size: x-large;
+    }
+
+    .header {
+        background-color: #000;
+    }
+    .dropdown {
+        display: inline-block;
+    }
+}

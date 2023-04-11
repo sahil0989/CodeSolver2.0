@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautify</title>
+    <link rel="stylesheet" href="/block3.css" />
+</head>
+
+<body id="body">
+    <header class="header" id="header">
+        <a href="/index.html" class="logo"><span class="gradient">Code Solver</span></a>
+
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/block1.html">Solution</a>
+            <a href="/block2.html">Bug Detector</a>
+            <a href="/block3.html">Beautify</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="glass left box" id="glass">
+            <div align="center" class="box1">
+                <select>
+                  <option>Select Languge</option>
+                  <option>C</option>
+                  <option>C++</option>
+                  <option>Java</option>
+                  <option>Html</option>
+                  <option>Python</option>
+                  <option>javascript</option>
+                </select>
+              </div>
+            <h1 class="left"><span class="gradient">Enter your Code</span></h1>
+            <div class="input left">
+                <textarea id="my-text" placeholder="Enter your code here..."></textarea>
+            </div>
+            <button class="button-29" onclick="talk()">Click Me</button>
+        </div>
+        <div class="glass right box" id="glass1">
+            <h1 class="right"><span class="gradient">Your code is displayed here</span></h1>
+            <p id="chatLog" class="example"></p>
+        </div>
+    </section>
+
+    <script src="/javascript.js"></script>
+    <script>const myText = document.getElementById("my-text");
+        myText.style.cssText = `height: ${myText.scrollHeight}px; overflow-y: hidden`;
+        myText.addEventListener("input", function () {
+            this.style.height = "auto";
+            this.style.height = `${this.scrollHeight}px`;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solution</title>
+    <link rel="stylesheet" href="/block1.css" />
+</head>
+
+<body id="body">
+
+    <header class="header" id="header">
+        <a href="/index.html" class="logo"><span class="gradient">Code Solver</span></a>
+
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/block1.html">Solution</a>
+            <a href="/block2.html">Bug Detector</a>
+            <a href="/block3.html">Beautify</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+        <div class="dropdown">
+            <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+                <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+              </svg></button>
+            <div class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="#">Solution</a>
+              <a href="#">Bug Detector</a>
+              <a href="#">Beautify</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+    </header>
+
+    <section class="glass">
+        <div class="container">
+            <div class="heading"><span class="gradient">Ask Your Coding Question ?</span></div>
+            <div class="box1">
+                <select required>
+                    <option>Select Languge</option>
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>Java</option>
+                    <option>Html</option>
+                    <option>Python</option>
+                    <option>javascript</option>
+                </select>
+            </div>
+            <div class="input">
+                <input type="text" class="left" id="my-text" onkeydown="if(event.keyCode == 13){ talk()}"
+                    placeholder="Type your Question" />
+            </div><br>
+            <pre id="chatLog" class="example"></pre>
+        </div>
+    </section>
+
+    <script src="/javascript.js"></script>
+</body>
+
+</html>

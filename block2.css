@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 10em 10em;
+    background: url("/images/block2.jpg");
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+}
+
+.glass {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    color: #fff;
+    border-radius: 9px;
+    backdrop-filter: blur(50px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    line-height: 1.5;
+    transform: translatey(-5%);
+    transition: transform 0.5s;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+.example {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.glass h1 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.input input {
+    width: 100%;
+    height: 70px;
+    border: none;
+    padding-left: 30px;
+    padding-top: 0;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.glass p {
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+#chatLog {
+    height: 450px;
+    width: auto;
+    overflow: scroll;
+}
+
+textarea {
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/*Button CSS */
+.button-29 {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-29:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+#chatLog {
+    font-size: 1.1rem;
+    padding-top: 50px;
+    overflow: scroll;
+}
+
+
+/* Border effects */
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}
+
+:root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgba(168, 239, 255, 1);
+    --c2: rgba(168, 239, 255, 0.1);
+}
+
+.box {
+    font-size: 3vw;
+    margin: max(1rem, 3vw);
+    border: 0.35rem solid;
+    padding: 3vw;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}
+
+@keyframes borderRadial {
+    20% {
+        --gradX: 100%;
+        --gradY: 50%;
+    }
+
+    40% {
+        --gradX: 100%;
+        --gradY: 100%;
+    }
+
+    60% {
+        --gradX: 50%;
+        --gradY: 100%;
+    }
+
+    80% {
+        --gradX: 0%;
+        --gradY: 50%;
+    }
+
+    100% {
+        --gradX: 50%;
+        --gradY: 0%;
+    }
+}
+
+/* Nav bar  */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #5468ff;
+}
+
+header {
+    padding: 30px 0 0px 0;
+}
+
+.gradient {
+    background: #5adaff;
+    background: radial-gradient(circle farthest-corner at center center, #5adaff 0%, #5468ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.box1 {
+    position: absolute;
+    top: 4%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.box1 select {
+    border-radius: 60px;
+    background-color: #5468ff;
+    color: white;
+    padding: 2px 18px;
+    border: none;
+    font-size: 20px;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+
+}
