@@ -59,7 +59,6 @@
   width: 100%;
   padding: 0.7rem 9%;
   background-color: black;
-  opacity: 0.8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,53 +131,6 @@
     padding-top: 0px;
   }
 
-}
-
-.dropbtn {
-  background-color: #5468ff;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 18px;
-}
-
-.dropdown {
-  position: relative;
-  display: none;
-}
-
-.dropdown-content {
-  right: 0;
-  margin-top: 2px;
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 4px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #5468ff;
-  border-radius: 10px;
-  color: #f9f9f9;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #4351b5;
 }
 
 .teamSection {
@@ -274,6 +226,54 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.dropbtn {
+  background-color: #5468ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+.dropdown-content {
+  right: 0;
+  margin-top: 2px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 4px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #5468ff;
+  border-radius: 10px;
+  color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4351b5;
 }
 
 @media (max-width: 800px) {
