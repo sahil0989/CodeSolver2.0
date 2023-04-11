@@ -28,26 +28,17 @@
 
       <!-- Toggler -->
       
-      <div class="flex flex-col">
-        <button
-        class="md:hidden inline-block rounded bg-blue-600 px-4 py-1.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg px" onclick="myFunction()"
-        data-te-sidenav-toggle-ref data-te-target="#sidenav-7" aria-controls="#sidenav-7" aria-haspopup="true">
-        <span class="block [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
-            <path fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-      </button>
-        <div
-          class="py-2 fixed top-14 left-48 flex-col flex dropdown dropdown_open bg-blue-700 text-lg font-semibold rounded-xl pl-5 px-2 z-10 w-auto">
-          <a href="/index.html" class=" hover:bg-blue-400 rounded-xl px-2 mt-1" onclick="myFunction()">Home</a>
-          <a href="/block1.html" class="hover:bg-blue-400 rounded-xl px-2 mt-1" onclick="myFunction()">Solution</a>
-          <a href="/block2.html" class="hover:bg-blue-400 rounded-xl px-2 mt-1" onclick="myFunction()">Bug Detector</a>
-          <a href="/block3.html" class="hover:bg-blue-400 rounded-xl px-2 mt-1" onclick="myFunction()">Beautify</a>
-          <a href="#" class="hover:bg-blue-400 rounded-xl px-2 mt-1" onclick="myFunction()">Blog</a>
-          <a href="#" class="hover:bg-blue-400 rounded-xl px-2 mt-1" onclick="myFunction()">Contact US</a>
+      <div class="dropdown">
+        <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+            <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+          </svg></button>
+        <div class="dropdown-content">
+          <a href="/index.html">Home</a>
+          <a href="/block1.html">Solution</a>
+          <a href="/block2.html">Bug Detector</a>
+          <a href="/block3.html">Beautify</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact Us</a>
         </div>
       </div>
       <!-- Toggler -->
