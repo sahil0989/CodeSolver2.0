@@ -16,7 +16,6 @@ function talk() {
         document.getElementById('chatLog').innerHTML = know[user] + "<br>";
         document.getElementById("body").style.paddingTop = "10rem";
         document.getElementById("glass").style.height = "620px";
-        // document.getElementById("glass").style.marginTop = "50%";
         document.getElementById("glass1").style.height = "620px";
     } else {
         document.getElementById('chatLog').innerHTML = "Sorry,I didn't understand <br>";

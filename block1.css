@@ -96,7 +96,7 @@ header {
     color: white;
     padding: 2px 18px;
     border: none;
-    font-size: 20px;
+    font-size: 1.4rem;
     -webkit-appearance: button;
     appearance: button;
     outline: none;
@@ -135,7 +135,6 @@ header {
     height: 50px;
     border: none;
     padding-left: 30px;
-    padding-top: 0;
     outline: none;
     font-size: 1.5rem;
     border-radius: 20px;
@@ -173,7 +172,7 @@ header {
 
 .dropdown-content {
     right: 0;
-    margin-top: 2px;
+    margin-top: 3px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -209,6 +208,15 @@ header {
         display: none;
     }
 
+    .dropbtn {
+        padding: 0.4rem 1rem;
+    }
+
+    .input input {
+        font-size: 1rem;
+        height: 35px;
+    }
+
     body {
         padding: 1rem 2rem;
     }
@@ -222,7 +230,7 @@ header {
     }
 
     .glass {
-        margin-top: 12rem;
+        margin-top: 8rem;
         width: 100%;
     }
 
@@ -239,9 +247,19 @@ header {
     }
 
     .header {
+        padding: 1rem 9%;
         background-color: #000;
     }
+
     .dropdown {
         display: inline-block;
+    }
+
+    .box1 option {
+        font-size: 0.8rem;
+    }
+
+    .box1 select {
+        font-size: 0.8rem;
     }
 }
