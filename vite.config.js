@@ -11,6 +11,7 @@ export default defineConfig({
                 block1: './block1.html',
                 block2: './block2.html',
                 block3: './block3.html',
+                block5: './block5.html',
                 mainjs: './javascript.js',
             },
         },
