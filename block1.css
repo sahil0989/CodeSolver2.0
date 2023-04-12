@@ -251,6 +251,10 @@ header {
         background-color: #000;
     }
 
+    .dropbtn {
+        padding: 0.4rem 1rem;
+    }
+
     .dropdown {
         display: inline-block;
     }
