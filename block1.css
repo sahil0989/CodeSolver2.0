@@ -13,6 +13,7 @@ body {
     opacity: 0.9;
     align-items: center;
     justify-content: space-between;
+    scrollbar-width: none;
 }
 
 section {
@@ -149,6 +150,10 @@ header {
     font-size: 1.1rem;
     padding-top: 50px;
     overflow: scroll;
+}
+
+#chatLog::-webkit-scrollbar {
+    display: none;
 }
 
 .dropbtn {
