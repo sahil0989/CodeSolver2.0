@@ -8,10 +8,13 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: './index.html',
-                block1: './block1.html',
-                block2: './block2.html',
-                block3: './block3.html',
-                block5: './block5.html',
+                indexMain:'./Home.html',
+                loginPage: './login.html',
+                registerPage: './register.html',
+                block1: './solutin.html',
+                block2: './bugDetector.html',
+                block3: './beautify.html',
+                block5: './ContactUs.html',
                 mainjs: './src/script.js',
             },
         },
