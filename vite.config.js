@@ -11,7 +11,7 @@ export default defineConfig({
                 indexMain:'./Home.html',
                 loginPage: './login.html',
                 registerPage: './register.html',
-                block1: './solutin.html',
+                block1: './solution.html',
                 block2: './bugDetector.html',
                 block3: './beautify.html',
                 block5: './ContactUs.html',
