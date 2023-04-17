@@ -23,7 +23,6 @@ export default defineConfig({
                 emailError: './emailError.html',
                 emailLoginError: './emailLoginError.html',
                 fieldRequiredError: './fieldRequiredError.html',
-                passwordError: './passwordError.html',
                 usernameError: './usernameError.html',
                 mainjs: './src/script.js',
             },
