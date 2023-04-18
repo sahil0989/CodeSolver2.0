@@ -63,8 +63,6 @@
     </section>
 
     <script>
-        // Talk function
-
         function talk() {
             var know = {
                 "Who are you": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quos. Magni, nesciunt maxime obcaecati dicta vitae tenetur quaerat dolorem pariatur totam maiores illo quia ducimus? Impedit officiis asperiores eligendi hic quos accusamus culpa laborum ducimus saepe magni, eum mollitia exercitationem est sunt omnis quasi, pariatur enim quis, in ullam vero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quos. Magni, nesciunt maxime obcaecati dicta vitae tenetur quaerat dolorem pariatur totam maiores illo quia ducimus? Impedit officiis asperiores eligendi hic quos accusamus culpa laborum ducimus saepe magni, eum mollitia exercitationem est sunt omnis quasi, pariatur enim quis, in ullam vero.",
@@ -79,9 +77,9 @@
             document.getElementById('chatLog').innerHTML = user + "<br>";
             if (user in know) {
                 document.getElementById('chatLog').innerHTML = know[user] + "<br>";
-                // document.getElementById("body").style.paddingTop = "10rem";
-                // document.getElementById("glass").style.height = "620px";
-                // document.getElementById("glass1").style.height = "620px";
+                document.getElementById("body").style.paddingTop = "10rem";
+                document.getElementById("glass").style.height = "620px";
+                document.getElementById("glass1").style.height = "620px";
             } else {
                 document.getElementById('chatLog').innerHTML = "Sorry,I didn't understand <br>";
             }
