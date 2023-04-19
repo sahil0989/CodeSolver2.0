@@ -40,7 +40,8 @@
     </header>
 
     <section>
-        <div class="glass left box" id="glass">
+        <div class="glass box" id="glass">
+            <h1><span class="gradient">Enter your Code</span></h1>
             <div align="center" class="box1">
                 <select>
                     <option>Select Languge</option>
@@ -52,19 +53,83 @@
                     <option>javascript</option>
                 </select>
             </div>
-            <h1 class="left"><span class="gradient">Enter your Code</span></h1>
-            <div class="input left">
+            <div class="input">
                 <textarea id="my-text" placeholder="Enter your code here..."></textarea>
             </div>
-            <button class="buttonEffect" onclick="talk()">Click Me</button>
+            <button class="buttonEffect" id="button">Click Me</button>
         </div>
         <div class="glass right box" id="glass1">
             <h1 class="right"><span class="gradient">Your code is displayed here</span></h1>
-            <p id="chatLog" class="example"></p>
+            <div id="sol">
+                <img src="./images/copy-icon.svg" id="copyURLBtn" alt="copy to clipboard icon">
+                <div class="text-boxes">
+                    <div class="text-box HTMLBox">
+                        <textarea id="HTMLBox" readonly></textarea>
+                        <button id="HTMLButton">Reset</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <script type="module" src="./src/script.js" ></script>
+    <script>
+
+        let HTMLBox = document.getElementById("HTMLBox");
+        let cpy = document.getElementById('copyURLBtn');
+        const HTMLButton = document.getElementById('HTMLButton');
+        const button = document.getElementById("button")
+        button.addEventListener("click", () => {
+            var know = {
+                "Who are you": "? Rem officiis est eaque iusto. Accusantium repudiandae, et vero quo magni nisi fugiat totam illum nam consequuntur maiores ipsa iste amet, quisquam tempora voluptas aperiam voluptates perferendis expedita necessitatibus? Reprehenderit qui vero corrupti delectus, rem aliquam.",
+                "first 10 prime numbers in python": "r = 30 \nfor a range(2,r+1):\n\tk = 0\n\tfor i in range(2,a//2+1):\n\t\tif(a%i == 0) :\n\t\t\tk = k+1\n\t\tif(k <= 0): \n\t\t\tprint(a,end=' ')",
+                "How are you": "Good :)",
+                "What can i do for you": "Please Give us A Follow & Like.",
+                "Your followers": "I have my family of 5000 members, i don't have follower ,have supportive Famiy ",
+                "ok": "Thank You So Much ",
+                "Bye": "Okay! Will meet soon.."
+            };
+
+            document.getElementById('sol').style.display = "block";
+
+            if (screen.width > 769) {
+                document.getElementById('glass1').style.height = "38rem";
+                document.getElementById('glass').style.height = "38rem";
+            }
+            else {
+                document.getElementById('glass1').style.height = "38rem";
+                document.getElementById('glass1').style.width = "90%";
+                document.getElementById('glass').style.width = "90%";
+            }
+
+            var user = document.getElementById('my-text').value;
+
+            if (user in know) {
+                document.getElementById('HTMLBox').innerHTML = know[user] + "<br>";
+            } else {
+                document.getElementById('HTMLBox').innerHTML = "We are still upgrading our database.\nYou can contact us for your Question.";
+            }
+        })
+
+
+        HTMLButton.addEventListener("click", () => {
+            document.getElementById('my-text').value = "";
+            document.getElementById('sol').style.display = "none";
+            if (screen.width > 769) {
+                document.getElementById('glass1').style.height = "420px";
+                document.getElementById('glass').style.height = "420px";
+            }
+            else {
+                document.getElementById('glass1').style.height = "420px";
+            }
+        })
+
+
+        cpy.addEventListener("click", () => {
+            HTMLBox.select();
+            document.execCommand("copy");
+        })
+
+    </script>
 </body>
 
 </html>
