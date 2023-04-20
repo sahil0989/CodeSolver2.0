@@ -397,4 +397,7 @@ body::-webkit-scrollbar {
         max-width: auto;
         min-width: 16 rem;
     }
+    #HTMLBlock {
+        font-size: small;
+    }
 }
