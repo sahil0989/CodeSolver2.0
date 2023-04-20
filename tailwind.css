@@ -304,24 +304,10 @@ h3 {
   transition: all 1s;
 }
 
-.upper {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(-100%);
-  transition: all 1.5s;
-}
-
 .right {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(100%);
-  transition: all 1.2s;
-}
-
-.bottom {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(100%);
   transition: all 1.2s;
 }
 
@@ -331,22 +317,10 @@ h3 {
   transform: translateX(0);
 }
 
-.up {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
-
 .rt {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-}
-
-.bt {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
 }
 
 @media(prefers-reduced-motion) {
