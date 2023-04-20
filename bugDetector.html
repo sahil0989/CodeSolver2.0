@@ -81,13 +81,7 @@
         const button = document.getElementById("button")
         button.addEventListener("click", () => {
             var know = {
-                "Who are you": "? Rem officiis est eaque iusto. Accusantium repudiandae, et vero quo magni nisi fugiat totam illum nam consequuntur maiores ipsa iste amet, quisquam tempora voluptas aperiam voluptates perferendis expedita necessitatibus? Reprehenderit qui vero corrupti delectus, rem aliquam.",
-                "first 10 prime numbers in python": "r = 30 \nfor a range(2,r+1):\n\tk = 0\n\tfor i in range(2,a//2+1):\n\t\tif(a%i == 0) :\n\t\t\tk = k+1\n\t\tif(k <= 0): \n\t\t\tprint(a,end=' ')",
-                "How are you": "Good :)",
-                "What can i do for you": "Please Give us A Follow & Like.",
-                "Your followers": "I have my family of 5000 members, i don't have follower ,have supportive Famiy ",
-                "ok": "Thank You So Much ",
-                "Bye": "Okay! Will meet soon.."
+                "sahil" : "The developer"
             };
 
             document.getElementById('sol').style.display = "block";
@@ -107,7 +101,7 @@
             if (user in know) {
                 document.getElementById('HTMLBox').innerHTML = know[user] + "<br>";
             } else {
-                document.getElementById('HTMLBox').innerHTML = "We are still upgrading our database.\nYou can contact us for your Question.";
+                document.getElementById('HTMLBox').innerHTML = "Sorry, for the Inconvenience\nWe are still working on it.";
             }
         })
 
