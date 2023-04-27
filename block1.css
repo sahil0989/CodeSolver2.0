@@ -325,7 +325,37 @@ body::-webkit-scrollbar {
     transform: translateY(2px);
 }
 
+.feedback {
+    position: absolute;
+    top: 87%;
+    left: 90%;
+    z-index: 100;
+    color: white;
+}
+
+.feedback h2 {
+    font-size: 1rem;
+}
+
+.feedback img
+{
+    height: 80px;
+}
+
 @media (max-width: 800px) {
+    .feedback{
+        left: 85%;
+        top: 90%;
+    }
+
+    .feedback img {
+        height: 50px;
+    }
+
+    .feedback h2 {
+        font-size: 0.6rem;
+    }
+    
     .navbar {
         display: none;
     }
@@ -401,3 +431,4 @@ body::-webkit-scrollbar {
         font-size: small;
     }
 }
+

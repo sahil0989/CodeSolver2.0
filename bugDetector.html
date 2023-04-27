@@ -2,129 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bug Detector</title>
-    <link rel="stylesheet" href="/block2.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bug Detector</title>
+  <link rel="stylesheet" href="/block2.css" />
 </head>
 
 <body id="body">
-    <header class="header" id="header">
-        <a href="/Home.html" class="logo"><span class="gradient">Code Solver</span></a>
+  <header class="header" id="header">
+    <a href="/Home.html" class="logo"><span class="gradient">Code Solver</span></a>
 
-        <nav class="navbar">
-            <a href="/Home.html">Home</a>
-            <a href="/solution.html">Solution</a>
-            <a href="/bugDetector.html">Bug Detector</a>
-            <a href="/beautify.html">Beautify</a>
-            <a href="/blog.html">Blog</a>
-            <a href="/ContactUs.html">Contact Us</a>
-        </nav>
+    <nav class="navbar">
+      <a href="/Home.html">Home</a>
+      <a href="/solution.html">Solution</a>
+      <a href="/bugDetector.html">Bug Detector</a>
+      <a href="/beautify.html">Beautify</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/ContactUs.html">Contact Us</a>
+    </nav>
 
-        <div class="dropdown">
-            <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-border-width" viewBox="0 0 16 16">
-                    <path
-                        d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
-                </svg></button>
-            <div class="dropdown-content">
-                <a href="/Home.html">Home</a>
-                <a href="/solution.html">Solution</a>
-                <a href="/bugDetector.html">Bug Detector</a>
-                <a href="/beautify.html">Beautify</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/ContactUs.html">Contact Us</a>
-            </div>
+    <div class="dropdown">
+      <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+          <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+        </svg></button>
+      <div class="dropdown-content">
+        <a href="/Home.html">Home</a>
+        <a href="/solution.html">Solution</a>
+        <a href="/bugDetector.html">Bug Detector</a>
+        <a href="/beautify.html">Beautify</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/ContactUs.html">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="glass box" id="glass">
+      <h1><span class="gradient">Enter your Code</span></h1>
+      <div align="center" class="box1">
+        <select>
+          <option>Select Languge</option>
+          <option>C</option>
+          <option>C++</option>
+          <option>Java</option>
+          <option>Html</option>
+          <option>Python</option>
+          <option>javascript</option>
+        </select>
+      </div>
+      <div class="input">
+        <textarea id="my-text" placeholder="Enter your code here..."></textarea>
+      </div>
+      <button class="buttonEffect" id="button">Click Me</button>
+    </div>
+    <div class="glass box" id="glass1">
+      <h1><span class="gradient">Your code is displayed here</span></h1>
+      <div id="sol">
+        <img src="./images/copy-icon.svg" id="copyURLBtn" alt="copy to clipboard icon">
+        <div class="text-boxes">
+          <div class="text-box HTMLBox">
+            <textarea id="HTMLBox" readonly></textarea>
+            <button id="HTMLButton">Reset</button>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </section>
+  <div class="feedback" id="feedback">
+    <h2>feedback</h2>
+    <a href="/ContactUs.html"><img src="/images/person-feedback-svgrepo-com.svg" alt=""></a>
+  </div>
 
-    <section>
-        <div class="glass box" id="glass">
-            <h1><span class="gradient">Enter your Code</span></h1>
-            <div align="center" class="box1">
-                <select>
-                    <option>Select Languge</option>
-                    <option>C</option>
-                    <option>C++</option>
-                    <option>Java</option>
-                    <option>Html</option>
-                    <option>Python</option>
-                    <option>javascript</option>
-                </select>
-            </div>
-            <div class="input">
-                <textarea id="my-text" placeholder="Enter your code here..."></textarea>
-            </div>
-            <button class="buttonEffect" id="button">Click Me</button>
-        </div>
-        <div class="glass box" id="glass1">
-            <h1><span class="gradient">Your code is displayed here</span></h1>
-            <div id="sol">
-                <img src="./images/copy-icon.svg" id="copyURLBtn" alt="copy to clipboard icon">
-                <div class="text-boxes">
-                    <div class="text-box HTMLBox">
-                        <textarea id="HTMLBox" readonly></textarea>
-                        <button id="HTMLButton">Reset</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="toast">Bhosdike Chutiya hai kya</div>
+  <script>
+    let HTMLBox = document.getElementById("HTMLBox");
+    let cpy = document.getElementById('copyURLBtn');
+    const HTMLButton = document.getElementById('HTMLButton');
+    const button = document.getElementById("button")
+    button.addEventListener("click", () => {
+      var know = {
+        "sahil": "The developer"
+      };
 
-    <div class="toast">Bhosdike Chutiya hai kya</div>
-    <script>
+      document.getElementById('sol').style.display = "block";
 
-        let HTMLBox = document.getElementById("HTMLBox");
-        let cpy = document.getElementById('copyURLBtn');
-        const HTMLButton = document.getElementById('HTMLButton');
-        const button = document.getElementById("button")
-        button.addEventListener("click", () => {
-            var know = {
-                "sahil" : "The developer"
-            };
+      if (screen.width > 769) {
+        document.getElementById('glass1').style.height = "38rem";
+        document.getElementById('glass').style.height = "38rem";
+      } else {
+        document.getElementById('glass1').style.height = "38rem";
+        document.getElementById('glass1').style.width = "90%";
+        document.getElementById('glass').style.width = "90%";
+      }
 
-            document.getElementById('sol').style.display = "block";
+      var user = document.getElementById('my-text').value;
 
-            if (screen.width > 769) {
-                document.getElementById('glass1').style.height = "38rem";
-                document.getElementById('glass').style.height = "38rem";
-            }
-            else {
-                document.getElementById('glass1').style.height = "38rem";
-                document.getElementById('glass1').style.width = "90%";
-                document.getElementById('glass').style.width = "90%";
-            }
-
-            var user = document.getElementById('my-text').value;
-
-            if (user in know) {
-                document.getElementById('HTMLBox').innerHTML = know[user] + "<br>";
-            } else {
-                document.getElementById('HTMLBox').innerHTML = "Sorry, for the Inconvenience\nWe are still working on it.";
-            }
-        })
+      if (user in know) {
+        document.getElementById('HTMLBox').innerHTML = know[user] + "<br>";
+      } else {
+        document.getElementById('HTMLBox').innerHTML = "Sorry, for the Inconvenience\nWe are still working on it.";
+      }
+    })
 
 
-        HTMLButton.addEventListener("click", () => {
-            document.getElementById('my-text').value = "";
-            document.getElementById('sol').style.display = "none";
-            if (screen.width > 769) {
-                document.getElementById('glass1').style.height = "420px";
-                document.getElementById('glass').style.height = "420px";
-            }
-            else {
-                document.getElementById('glass1').style.height = "420px";
-            }
-        })
+    HTMLButton.addEventListener("click", () => {
+      document.getElementById('my-text').value = "";
+      document.getElementById('sol').style.display = "none";
+      if (screen.width > 769) {
+        document.getElementById('glass1').style.height = "420px";
+        document.getElementById('glass').style.height = "420px";
+      } else {
+        document.getElementById('glass1').style.height = "420px";
+      }
+    })
 
 
-        cpy.addEventListener("click", () => {
-            HTMLBox.select();
-            document.execCommand("copy");
-        })
-
-    </script>
+    cpy.addEventListener("click", () => {
+      HTMLBox.select();
+      document.execCommand("copy");
+    })
+  </script>
 </body>
 
 </html>

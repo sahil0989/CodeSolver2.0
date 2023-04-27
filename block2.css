@@ -460,9 +460,38 @@ body::-webkit-scrollbar {
         0px 4px 6px -2px rgba(0, 0, 0, 0.5);
 }
 
+.feedback {
+    position: absolute;
+    top: 87%;
+    left: 94%;
+    z-index: 100;
+    color: white;
+}
+
+.feedback h2 {
+    font-size: 1rem;
+}
+
+.feedback img {
+    height: 80px;
+}
+
 
 /* Media queries */
 @media screen and (max-width:800px) {
+
+    .feedback {
+        left: 85%;
+        top: 16%;
+    }
+
+    .feedback img {
+        height: 50px;
+    }
+
+    .feedback h2 {
+        font-size: 0.6rem;
+    }
 
     .header {
         position: fixed;

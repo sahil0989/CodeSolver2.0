@@ -43,17 +43,6 @@
     <section class="glass">
         <div class="container">
             <div class="heading"><span class="gradient">Ask Your Coding Question ?</span></div>
-            <div class="box1">
-                <select required>
-                    <option>Select Languge</option>
-                    <option>C</option>
-                    <option>C++</option>
-                    <option>Java</option>
-                    <option>Html</option>
-                    <option>Python</option>
-                    <option>javascript</option>
-                </select>
-            </div>
             <div class="input">
                 <input type="text" class="left" id="my-text" onkeydown="if(event.keyCode == 13){ talk()}"
                     placeholder="Type your Question" />
@@ -67,7 +56,11 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
+        <div class="feedback" id="feedback">
+            <h2>feedback</h2>
+            <a href="/ContactUs.html"><img src="/images/person-feedback-svgrepo-com.svg" alt=""></a>
+        </div>
 
     <script>
         function talk() {
@@ -81,6 +74,7 @@
                 "Bye": "Okay! Will meet soon.."
             };
             document.getElementById('sol').style.display = "block";
+            document.getElementById('feedback').style.display = "none";
             var user = document.getElementById('my-text').value;
             if (user in know) {
                 document.getElementById('HTMLBox').innerHTML = know[user] + "<br>";
@@ -94,6 +88,7 @@
         HTMLButton.addEventListener("click", () => {
             document.getElementById('my-text').value = "";
             document.getElementById('sol').style.display = "none";
+            document.getElementById('feedback').style.display = "block";
         })
 
         let HTMLBox = document.getElementById("HTMLBox");
