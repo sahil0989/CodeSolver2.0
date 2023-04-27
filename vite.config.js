@@ -11,6 +11,7 @@ export default defineConfig({
                 Home:'./Home.html',
                 login: './login.html',
                 register: './register.html',
+                blog:'./blog.html',
                 solution: './solution.html',
                 bugDetector: './bugDetector.html',
                 beautify: './beautify.html',
