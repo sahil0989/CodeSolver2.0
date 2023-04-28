@@ -77,7 +77,7 @@
             document.getElementById('feedback').style.display = "none";
             var user = document.getElementById('my-text').value;
             if (user in know) {
-                document.getElementById('HTMLBox').innerHTML = know[user] + "<br>";
+                document.getElementById('HTMLBox').innerHTML = know[user];
             } else {
                 document.getElementById('HTMLBox').innerHTML = "We are still upgrading our database.\nYou can contact us for your Question.";
             }
